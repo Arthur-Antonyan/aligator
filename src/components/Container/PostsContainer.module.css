@@ -1,0 +1,10 @@
+.container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.8fr));
+  grid-auto-flow: dense;
+  justify-content: center;
+  grid-gap: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+}

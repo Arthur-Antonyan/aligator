@@ -1,0 +1,60 @@
+@import '../../../cssVariables/variables.css';
+
+.navContent {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+}
+
+.navigation {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 80px);
+  grid-gap: 10px;
+  align-items: center;
+}
+
+a {
+  height: 100%;
+  text-decoration: none;
+  color: var(--font-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: var(--grey);
+}
+
+.active {
+  color: var(--yellow);
+}
+
+.active:hover {
+  color: var(--yellow);
+}
+
+.searchBar {
+  width: 100%;
+  position: relative;
+  justify-self: end;
+}
+
+@media (max-width: 1024px) {
+  .navContent {
+    grid-template-columns: 1fr;
+    grid-column-end: auto;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .searchBar {
+    width: 200px;
+    justify-self: end;
+  }
+}

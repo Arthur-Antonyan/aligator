@@ -1,0 +1,23 @@
+@import '../../../cssVariables/variables.css';
+
+.postContainer {
+  height: 250px;
+  padding: 6px 26px;
+  box-sizing: border-box;
+  border: 1px solid var(--yellow);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.post {
+  color: var(--font-color);
+  text-align: center;
+}
+
+.title {
+  color: var(--yellow);
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}

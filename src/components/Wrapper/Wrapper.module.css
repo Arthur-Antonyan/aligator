@@ -1,0 +1,10 @@
+.mainContent {
+  width: 1320px;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
